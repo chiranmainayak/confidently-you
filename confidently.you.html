@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidently.U</title>
+    
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/text.css">
+    <link rel="stylesheet" href="styles/searchbox.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/homecard.css">
+    
+</head>
+
+<p class="text-title">know your body, know your style, with</p>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <input class="search-bar" type="text" placeholder="Search">
+            <p class="text-main">Confidently.U</p>
+            <ul class="nav-links">
+                <li><a href="">HOME</a></li>
+                <li><a href="bodytype.html">BODY TYPE+TONES</a></li>
+                <li><a href="makeup.html">MAKEUP</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <marquee class="marquee">get flat 50% of discount for the new releases..!</marquee>
+
+    
+
+    <p class="para-text">
+        Dressing up is a problem if you don't know what to wear. Shopping is also confusing thinking what to buy. We are here to end the problem with a solution. With 
+    </p>
+    
+    <p class="titlemain">
+        <u>CONFIDENTLY.U</u> wear your <u>style</u> and drop the <u>look.</u>
+    </p>
+
+    <h1><i><center>CHECK OUT THE DIFFERENT BODY SHAPES RIGHT BELOW..</center></i></h1>
+
+  
+
+    
+
+    <style>
+        .navbar {
+            background-color: rgb(164, 63, 63);
+            padding: 10px 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-bar {
+            border-radius: 50px;
+            padding: 6px 15px;
+            font-size: 20px;
+            width: 300px;
+        }
+
+        .text-main {
+            color: white;
+            font-size: 40px;
+            margin: 0 20px;
+            font-weight: bold;
+            padding-left: 170px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: goldenrod;
+            border-radius: 5px;
+        }
+
+        .marquee {
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        /* Body type sections styling */
+        .body-type-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 60px 40px;
+            gap: 50px;
+        }
+
+        .body-type-section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .image-left, .image-right, .content-left, .content-right {
+            flex: 1;
+        }
+
+        .image-left, .image-right {
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section-para {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 600px;
+        }
+
+        .body-img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* For reverse layout, align text right */
+        .body-type-section.reverse .content-left {
+            text-align: right;
+        }
+
+        .body-type-section.reverse .section-para {
+            margin-left: auto;
+        }
+
+        /* For normal layout, align text left */
+        .body-type-section:not(.reverse) .content-right {
+            text-align: left;
+        }
+
+        /* Text styles */
+        .text-title {
+            font-family: times new roman;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .para-text {
+            font-family: oswald;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .titlemain {
+            font-family: oswald;
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .body-type-section,
+            .body-type-section.reverse {
+                flex-direction: column !important;
+                margin: 40px 20px;
+                gap: 30px;
+            }
+            
+            .content-left, .content-right,
+            .image-left, .image-right {
+                width: 100%;
+                text-align: center !important;
+            }
+            
+            .section-para {
+                text-align: center !important;
+                margin: 0 auto;
+            }
+            
+            .body-img {
+                width: 250px;
+            }
+        }
+
+      .inverted-img{
+        width: 600px;
+      }
+
+
+      /* CARD DESIGN */
+.body-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.body-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* IMAGE ANIMATION */
+.body-img, .inverted-img {
+    transition: transform 0.4s ease;
+}
+
+.body-card:hover img {
+    transform: scale(1.05);
+}
+
+/* SCROLL ANIMATION BASE */
+.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TITLE ANIMATION */
+.section-title {
+    transition: color 0.3s;
+}
+
+.body-card:hover .section-title {
+    color: rgb(164, 63, 63);
+}
+
+/* BUTTON STYLE (optional future use) */
+.btn-style {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-style:hover {
+    background-color: rgb(164, 63, 63);
+}
+    
+    </style>
+
+
+<div class="body-type-section hidden">
+    <div class="image-left">
+        <div class="body-card">
+            <img class="body-img" src="pics/rectangle.jpg">
+        </div>
+    </div>
+
+    <div class="content-right">
+        <div class="body-card">
+            <h2 class="section-title">RECTANGLE</h2>
+            <p class="section-para">
+                You know you have a straight body type if you have the same measurements...
+            </p>
+            <a href="#" class="btn-style">Explore Style</a>
+        </div>
+    </div>
+</div>
+
+<div class="body-type-section reverse hidden"></div>
+
+
+<div class="body-type-section reverse hidden">
+    <div class="image-right">
+        <div class="body-card">
+            <img class="body-img" src="pics/hourglass.jpg">
+        </div>
+    </div>
+
+    <div class="content-left">
+        <div class="body-card">
+            <h2 class="section-title">HOURGLASS</h2>
+            <p class="section-para">
+                You have an hourglass body type if your shoulders and hips are balanced with a well-defined waist. This shape highlights natural curves and symmetry.
+            </p>
+            <a href="#" class="btn-style">Explore Style</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="body-type-section hidden">
+    <div class="image-left">
+        <div class="body-card">
+            <img class="body-img" src="pics/apple.jpg">
+        </div>
+    </div>
+
+    <div class="content-right">
+        <div class="body-card">
+            <h2 class="section-title">APPLE</h2>
+            <p class="section-para">
+                Apple body type carries more weight around the midsection with slimmer legs. Styling focuses on elongating the torso and creating balance.
+            </p>
+            <a href="#" class="btn-style">Explore Style</a>
+        </div>
+    </div>
+</div>
+
+<div class="body-type-section reverse hidden">
+    <div class="image-right">
+        <div class="body-card">
+            <img class="body-img" src="pics/pear_wallpaper.jpg">
+        </div>
+    </div>
+
+    <div class="content-left">
+        <div class="body-card">
+            <h2 class="section-title">PEAR</h2>
+            <p class="section-para">
+                Pear body type has wider hips and a smaller upper body. The goal is to highlight the upper body and balance proportions.
+            </p>
+            <a href="#" class="btn-style">Explore Style</a>
+        </div>
+    </div>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>
